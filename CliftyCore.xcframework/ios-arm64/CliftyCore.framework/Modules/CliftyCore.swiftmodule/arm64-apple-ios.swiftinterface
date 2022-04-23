@@ -1,0 +1,77 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios15.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CliftyCore
+@_exported import CliftyCore
+import Foundation
+import Swift
+import _Concurrency
+import os.log
+import os
+public enum EthChain : Swift.String {
+  case ETHEREUM
+  case POLYGON
+  case ARBITRUM
+  case OPTIMISM
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CliftyNFTInfo : Swift.Identifiable {
+  public let id: Foundation.UUID
+  public let contract: Swift.String?
+  public let tokenId: Swift.Int
+  public let tokenName: Swift.String?
+  public let tokenType: Swift.String?
+  public let imageURL: Swift.String?
+  public let attributes: [Swift.String : Any]?
+  public let descr: Swift.String?
+  public let metaURL: Swift.String?
+  public init(dict: [Swift.String : Any])
+  public typealias ID = Foundation.UUID
+}
+public struct CliftyChain : Swift.Identifiable {
+  public let id: Foundation.UUID
+  public let displayName: Swift.String
+  public let path: Swift.String
+  public let logoURL: Swift.String
+  public init(displayName: Swift.String, path: Swift.String, logoURL: Swift.String)
+  public typealias ID = Foundation.UUID
+}
+public struct CliftyChainDetails {
+  public let chain: Swift.String
+  public let web3Version: Swift.String
+}
+@_hasMissingDesignatedInitializers public class Clifty {
+  public static let shared: CliftyCore.Clifty
+  public func setProduction()
+  public func setAccessKey(key: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class NFTMetadata : ObjectiveC.NSObject {
+  final public let name: Swift.String?
+  final public let details: Swift.String?
+  final public let symbol: Swift.String?
+  final public let tracker: Swift.String?
+  final public let owner: Swift.String?
+  final public let asseturl: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NFT {
+  public class func getChains(completion: @escaping ([CliftyCore.CliftyChain]?, Foundation.URLResponse?, Swift.Error?) -> ())
+  public class func getChainInfo(chain: Swift.String, completion: @escaping (CliftyCore.CliftyChainDetails?, Foundation.URLResponse?, Swift.Error?) -> ())
+  public class func getAccountNFTs(chain: CliftyCore.EthChain, account: Swift.String, completion: @escaping ([CliftyCore.CliftyNFTInfo]?, Foundation.URLResponse?, Swift.Error?) -> ())
+  public class func getContractNFTs(chain: CliftyCore.EthChain, contract: Swift.String, completion: @escaping ([CliftyCore.CliftyNFTInfo]?, Foundation.URLResponse?, Swift.Error?) -> ())
+  public class func getMetadata(chain: CliftyCore.EthChain, address: Swift.String, tokenid: Swift.Int, completion: @escaping (CliftyCore.NFTMetadata?, Foundation.URLResponse?, Swift.Error?) -> ())
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CLiftyError : ObjectiveC.NSObject {
+  public var message: Swift.String?
+  public var errorCode: Swift.String?
+  public var statusCode: Foundation.NSNumber?
+  @objc deinit
+}
+extension CliftyCore.EthChain : Swift.Equatable {}
+extension CliftyCore.EthChain : Swift.Hashable {}
+extension CliftyCore.EthChain : Swift.RawRepresentable {}

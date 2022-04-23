@@ -1,0 +1,11 @@
+framework module CliftyCore {
+  umbrella header "CliftyCore.h"
+
+  export *
+  module * { export * }
+}
+
+module CliftyCore.Swift {
+    header "CliftyCore-Swift.h"
+    requires objc
+}
