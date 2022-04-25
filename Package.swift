@@ -12,7 +12,7 @@ let CliftyCoreSDK = Package(
     products: [
         .library(
             name: "CliftyCore",
-            targets: ["CliftyCore"]
+            targets: ["CliftyCore"])
     ],
     targets: [
         .binaryTarget(
