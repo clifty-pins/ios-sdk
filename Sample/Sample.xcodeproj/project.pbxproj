@@ -7,29 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005F2F1C28175D61001C099D /* CliftyCore in Frameworks */ = {isa = PBXBuildFile; productRef = 005F2F1B28175D61001C099D /* CliftyCore */; };
 		00CF667027F9F8B00076D907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF666F27F9F8B00076D907 /* AppDelegate.swift */; };
 		00CF667227F9F8B00076D907 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF667127F9F8B00076D907 /* SceneDelegate.swift */; };
 		00CF667727F9F8B00076D907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF667527F9F8B00076D907 /* Main.storyboard */; };
 		00CF667927F9F8B10076D907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CF667827F9F8B10076D907 /* Assets.xcassets */; };
 		00CF667C27F9F8B10076D907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF667A27F9F8B10076D907 /* LaunchScreen.storyboard */; };
-		00CF668627F9FBB40076D907 /* CliftyCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CF668527F9FBB40076D907 /* CliftyCore.xcframework */; };
-		00CF668727F9FBB40076D907 /* CliftyCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00CF668527F9FBB40076D907 /* CliftyCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00CF668A27F9FC190076D907 /* MetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF668927F9FC190076D907 /* MetadataViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		00CF668827F9FBB40076D907 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				00CF668727F9FBB40076D907 /* CliftyCore.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00CF666C27F9F8B00076D907 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +24,6 @@
 		00CF667827F9F8B10076D907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CF667B27F9F8B10076D907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00CF667D27F9F8B10076D907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00CF668527F9FBB40076D907 /* CliftyCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CliftyCore.xcframework; path = ../CliftyCore.xcframework; sourceTree = "<group>"; };
 		00CF668927F9FC190076D907 /* MetadataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00CF668627F9FBB40076D907 /* CliftyCore.xcframework in Frameworks */,
+				005F2F1C28175D61001C099D /* CliftyCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +73,6 @@
 		00CF668427F9FBB40076D907 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00CF668527F9FBB40076D907 /* CliftyCore.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,13 +87,15 @@
 				00CF666827F9F8B00076D907 /* Sources */,
 				00CF666927F9F8B00076D907 /* Frameworks */,
 				00CF666A27F9F8B00076D907 /* Resources */,
-				00CF668827F9FBB40076D907 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Sample;
+			packageProductDependencies = (
+				005F2F1B28175D61001C099D /* CliftyCore */,
+			);
 			productName = Sample;
 			productReference = 00CF666C27F9F8B00076D907 /* Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 00CF666327F9F8B00076D907;
+			packageReferences = (
+				005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */,
+			);
 			productRefGroup = 00CF666D27F9F8B00076D907 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -386,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/clifty-io/ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		005F2F1B28175D61001C099D /* CliftyCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = CliftyCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00CF666427F9F8B00076D907 /* Project object */;
 }
