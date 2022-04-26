@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ksR6Joc0UGzWhtBCCPnuRUf5+zc=
+		wWM7JgNlVsUXSkHb6etNc6EWhkY=
 		</data>
 		<key>Modules/CliftyCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		332UO9PUikcXrVLvn4ud5aEKYbc=
+		m3zEZCIL+H7OZ4DSVF4YV/3Fa5U=
 		</data>
 		<key>Modules/CliftyCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vva+8fOtXLf3yDd+9bjxH//yL7Y=
+		FL9Ryf0lsBT+VxKNyo4JJF0NPc8=
 		</data>
 		<key>Modules/CliftyCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M9S9OB8jxl0mPByJZTtWter8Bv8=
+		+1FP7InnWRHb3gOHYwe9zT29dIA=
 		</data>
 		<key>Modules/CliftyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QA86pgwS72i9bxayM7r3eqcC50o=
+		kjtU6laomGzUMOy0tRF35BJzmIw=
 		</data>
 		<key>Modules/CliftyCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mueClbnc0AsjOZy5mKMo/NbUFgI=
+		ZHg/dTNncZ8izgnSUj0VYWoTCYI=
 		</data>
 		<key>Modules/CliftyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JyqZXj8KWdVKWPyq0mQ3eoMMCEA=
+		XsVpDD5sDZzJJ0M2sM6ZMYu1ehk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wgTyVsSbF/nkfPl6C0C86/7N5GvebJXF/XYjYPeDgM4=
+			ZuiRFHUMlQKQv2TQt5oVQa3JNVssSw4b+lrloSGsI7c=
 			</data>
 		</dict>
 		<key>Modules/CliftyCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8R2ngPz8QtxA4iAfSPk6L7YhLgX3Kp/B6+xcdAQV8z4=
+			lTIs81FIeDAvMjgVnbvPl2eYe3vz5OJYHGN/a1rIeSI=
 			</data>
 		</dict>
 		<key>Modules/CliftyCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4bE4LdMr9yhykwPGA6uthBmzulpw49Fwj+gt3837wl4=
+			bbr+LHdca8DEHhrXIj0LoaNpHol/3ooXZmwxYqCjISk=
 			</data>
 		</dict>
 		<key>Modules/CliftyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XtvgENwEYiUT7B5YSin7N2Qq7q2d/EgQT0vufZ9/2lM=
+			t07m1RwZdrzpWOzIvhjL/KRiIagCn4+19M8uwXuCDsA=
 			</data>
 		</dict>
 		<key>Modules/CliftyCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4cV7JswN0k2EmhzXaN8IK//2u7JhN86GALDq3yuBfpI=
+			1TyVem/zgOnbkc2SiA3PCtEyBpvKl+e6cnkxcfvehEo=
 			</data>
 		</dict>
 		<key>Modules/CliftyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fmD+ZS8DADF7o1Js8Hvq+zFX/GEZhWblTU7y/dttWZI=
+			I+bjvlwRKbzIGLgAzeir83iN+mGbHSkdY95COsjRC48=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
