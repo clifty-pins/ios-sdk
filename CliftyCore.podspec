@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "CliftyCore"
-  spec.version = "0.1"
+  spec.version = "0.2"
   spec.summary = "Clifty Core library for iOS apps"
   spec.homepage = "https://clifty.io"
   spec.documentation_url = "https://github.com/clifty-io/ios-sdk/wiki"
