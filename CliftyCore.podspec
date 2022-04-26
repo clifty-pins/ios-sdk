@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   spec.summary = "Clifty Core library for iOS apps"
   spec.homepage = "https://clifty.io"
   spec.documentation_url = "https://github.com/clifty-io/ios-sdk/wiki"
-  spec.license = { :type => "Commercial" }
+  spec.license = { :type => "Commercial", :text => "Copyright (c) 2022, Clifty Inc.\nAll rights reserved.\n" }
   spec.source = { :git => "https://github.com/clifty-io/ios-sdk.git", :tag => "#{spec.version}" }
   spec.swift_version = "5.3"
   spec.author = { "Clifty" => "contact@clifty.io" }
