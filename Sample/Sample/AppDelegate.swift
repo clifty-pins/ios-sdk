@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let sdkVersion = Bundle(for: Clifty.self).infoDictionary?["CFBundleShortVersionString"] {
             // sdkVersion is available here
-            print(sdkVersion)
+            print("CliftyCore version:", sdkVersion)
         }
         
         // When you switch the following into production, please make sure that you use

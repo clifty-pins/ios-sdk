@@ -20,6 +20,7 @@ class MetadataViewController: UIViewController {
     }
     
     @IBAction func goClicked(_ sender: Any) {
+        self.textView.text = "Getting response from server..."
         NFT.getMetadata(chain: EthChain.ETHEREUM, address: "0xcF849856FAb31Bbe2510ae143722B7e67130E545", tokenid: 2) { (metadata, resp, err) in
             // Let's see it
             let toDisplay = (metadata?.name)! + "\n" + (metadata!.details ?? "") + "\n" + (metadata?.symbol)!;
