@@ -21,3 +21,21 @@ let CliftyCoreSDK = Package(
         )
     ]
 )
+
+let CliftyNFTPickerSDK = Package(
+    name: "Clifty NFT Picker SDK",
+    platforms: [
+        .iOS(.v11)
+    ],
+    products: [
+        .library(
+            name: "CliftyNFTPicker",
+            targets: ["CliftyNFTPicker"])
+    ],
+    targets: [
+        .binaryTarget(
+            name: "CliftyNFTPicker",
+            path: "CliftyNFTPicker.xcframework"
+        )
+    ]
+)

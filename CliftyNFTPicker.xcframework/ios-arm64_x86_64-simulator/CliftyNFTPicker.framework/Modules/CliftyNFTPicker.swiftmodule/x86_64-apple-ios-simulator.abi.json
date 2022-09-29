@@ -1,0 +1,411 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CliftyCore",
+        "printedName": "CliftyCore",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CliftyCore",
+        "printedName": "CliftyCore",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "Import",
+        "name": "WalletConnectSwift",
+        "printedName": "WalletConnectSwift",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CliftyNFTPicker",
+        "printedName": "CliftyNFTPicker",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CliftyNFTPicker",
+                "printedName": "CliftyNFTPicker.CliftyNFTPicker",
+                "usr": "s:15CliftyNFTPickerAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15CliftyNFTPickerAACABycfc",
+            "mangledName": "$s15CliftyNFTPickerAACABycfc",
+            "moduleName": "CliftyNFTPicker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getSelectedNFT",
+            "printedName": "getSelectedNFT(chain:connectUrl:customerID:parent:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CliftyCore.NFTMetadata?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(CliftyCore.NFTMetadata?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CliftyCore.NFTMetadata?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NFTMetadata",
+                            "printedName": "CliftyCore.NFTMetadata",
+                            "usr": "c:@M@CliftyCore@objc(cs)NFTMetadata"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CliftyNFTPickerAAC14getSelectedNFT5chain10connectUrl10customerID6parent10completionySS_S2SSo16UIViewControllerCy0A4Core11NFTMetadataCSg_s5Error_pSgtctF",
+            "mangledName": "$s15CliftyNFTPickerAAC14getSelectedNFT5chain10connectUrl10customerID6parent10completionySS_S2SSo16UIViewControllerCy0A4Core11NFTMetadataCSg_s5Error_pSgtctF",
+            "moduleName": "CliftyNFTPicker",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showUI",
+            "printedName": "showUI(parent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CliftyNFTPickerAAC6showUI6parentySo16UIViewControllerC_tF",
+            "mangledName": "$s15CliftyNFTPickerAAC6showUI6parentySo16UIViewControllerC_tF",
+            "moduleName": "CliftyNFTPicker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNFT",
+            "printedName": "getNFT(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([CliftyCore.NFTMetadata]?, Foundation.URLResponse?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([CliftyCore.NFTMetadata]?, Foundation.URLResponse?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[CliftyCore.NFTMetadata]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[CliftyCore.NFTMetadata]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NFTMetadata",
+                                "printedName": "CliftyCore.NFTMetadata",
+                                "usr": "c:@M@CliftyCore@objc(cs)NFTMetadata"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CliftyNFTPickerAAC6getNFT_10completionySS_ySay0A4Core11NFTMetadataCGSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s15CliftyNFTPickerAAC6getNFT_10completionySS_ySay0A4Core11NFTMetadataCGSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "CliftyNFTPicker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15CliftyNFTPickerAAC",
+        "mangledName": "$s15CliftyNFTPickerAAC",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CliftyCore",
+        "printedName": "CliftyCore",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WalletConnectSwift",
+        "printedName": "WalletConnectSwift",
+        "declKind": "Import",
+        "moduleName": "CliftyNFTPicker"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/muthu\/root\/clifty\/clifty-sdk-ios\/Source\/NFTPicker\/CliftyNFTPicker\/NFTListTableViewController.swift",
+      "kind": "Array",
+      "offset": 361,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/muthu\/root\/clifty\/clifty-sdk-ios\/Source\/NFTPicker\/CliftyNFTPicker\/WalletConnect.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 12,
+      "value": "\"sessionKey\""
+    },
+    {
+      "filePath": "\/Users\/muthu\/root\/clifty\/clifty-sdk-ios\/Source\/NFTPicker\/CliftyNFTPicker\/WalletConnect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1932,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/muthu\/root\/clifty\/clifty-sdk-ios\/Source\/NFTPicker\/CliftyNFTPicker\/WalletConnect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1942,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/muthu\/root\/clifty\/clifty-sdk-ios\/Source\/NFTPicker\/CliftyNFTPicker\/WalletConnect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2108,
+      "length": 2,
+      "value": "32"
+    }
+  ]
+}

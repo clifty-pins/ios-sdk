@@ -1,0 +1,11 @@
+framework module CliftyNFTPicker {
+  umbrella header "CliftyNFTPicker.h"
+
+  export *
+  module * { export * }
+}
+
+module CliftyNFTPicker.Swift {
+  header "CliftyNFTPicker-Swift.h"
+  requires objc
+}
