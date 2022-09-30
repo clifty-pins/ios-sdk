@@ -9,6 +9,9 @@ let package = Package(
     platforms: [
         .iOS(.v11)
     ],
+    dependencies: [
+        .package(url: "https://github.com/WalletConnect/WalletConnectSwift.git", .upToNextMinor(from: "1.2.0"))
+    ],
     products: [
         .library(
             name: "CliftyCore",
