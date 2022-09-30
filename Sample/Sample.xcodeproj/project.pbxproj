@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00016A8828C3B7110071191A /* CliftyNFTPicker.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */; };
+		00016A8928C3B7110071191A /* CliftyNFTPicker.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00016A8C28C3B81D0071191A /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00016A8B28C3B81D0071191A /* PickerViewController.swift */; };
+		00016A8F28C3B92C0071191A /* WalletConnectSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 00016A8E28C3B92C0071191A /* WalletConnectSwift */; };
+		00016A9128C3B9540071191A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00016A9028C3B9540071191A /* ImageLoader.swift */; };
 		005F2F1C28175D61001C099D /* CliftyCore in Frameworks */ = {isa = PBXBuildFile; productRef = 005F2F1B28175D61001C099D /* CliftyCore */; };
 		00CF667027F9F8B00076D907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF666F27F9F8B00076D907 /* AppDelegate.swift */; };
 		00CF667227F9F8B00076D907 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF667127F9F8B00076D907 /* SceneDelegate.swift */; };
@@ -16,7 +21,24 @@
 		00CF668A27F9FC190076D907 /* MetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF668927F9FC190076D907 /* MetadataViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		00016A8A28C3B7110071191A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00016A8928C3B7110071191A /* CliftyNFTPicker.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CliftyNFTPicker.xcframework; path = ../CliftyNFTPicker.xcframework; sourceTree = "<group>"; };
+		00016A8B28C3B81D0071191A /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		00016A9028C3B9540071191A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		00CF666C27F9F8B00076D907 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CF666F27F9F8B00076D907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CF667127F9F8B00076D907 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00016A8F28C3B92C0071191A /* WalletConnectSwift in Frameworks */,
 				005F2F1C28175D61001C099D /* CliftyCore in Frameworks */,
+				00016A8828C3B7110071191A /* CliftyNFTPicker.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +90,8 @@
 				00CF667A27F9F8B10076D907 /* LaunchScreen.storyboard */,
 				00CF667D27F9F8B10076D907 /* Info.plist */,
 				00CF668927F9FC190076D907 /* MetadataViewController.swift */,
+				00016A8B28C3B81D0071191A /* PickerViewController.swift */,
+				00016A9028C3B9540071191A /* ImageLoader.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -73,6 +99,7 @@
 		00CF668427F9FBB40076D907 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,6 +114,7 @@
 				00CF666827F9F8B00076D907 /* Sources */,
 				00CF666927F9F8B00076D907 /* Frameworks */,
 				00CF666A27F9F8B00076D907 /* Resources */,
+				00016A8A28C3B7110071191A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +123,7 @@
 			name = Sample;
 			packageProductDependencies = (
 				005F2F1B28175D61001C099D /* CliftyCore */,
+				00016A8E28C3B92C0071191A /* WalletConnectSwift */,
 			);
 			productName = Sample;
 			productReference = 00CF666C27F9F8B00076D907 /* Sample.app */;
@@ -126,6 +155,7 @@
 			mainGroup = 00CF666327F9F8B00076D907;
 			packageReferences = (
 				005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */,
+				00016A8D28C3B92C0071191A /* XCRemoteSwiftPackageReference "WalletConnectSwift" */,
 			);
 			productRefGroup = 00CF666D27F9F8B00076D907 /* Products */;
 			projectDirPath = "";
@@ -156,6 +186,8 @@
 			files = (
 				00CF667027F9F8B00076D907 /* AppDelegate.swift in Sources */,
 				00CF667227F9F8B00076D907 /* SceneDelegate.swift in Sources */,
+				00016A9128C3B9540071191A /* ImageLoader.swift in Sources */,
+				00016A8C28C3B81D0071191A /* PickerViewController.swift in Sources */,
 				00CF668A27F9FC190076D907 /* MetadataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,11 +338,14 @@
 				DEVELOPMENT_TEAM = 96573A62AT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Sample;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +353,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.clifty.sdk.core.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -334,11 +372,14 @@
 				DEVELOPMENT_TEAM = 96573A62AT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Sample;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +387,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.clifty.sdk.core.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -376,6 +420,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		00016A8D28C3B92C0071191A /* XCRemoteSwiftPackageReference "WalletConnectSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/clifty-io/ios-sdk";
@@ -387,6 +439,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		00016A8E28C3B92C0071191A /* WalletConnectSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00016A8D28C3B92C0071191A /* XCRemoteSwiftPackageReference "WalletConnectSwift" */;
+			productName = WalletConnectSwift;
+		};
 		005F2F1B28175D61001C099D /* CliftyCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */;
