@@ -4,35 +4,24 @@
 
 import PackageDescription
 
-let CliftyCoreSDK = Package(
-    name: "Clifty Core SDK",
+let package = Package(
+    name: "Clifty SDKs",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
             name: "CliftyCore",
-            targets: ["CliftyCore"])
-    ],
-    targets: [
-        .binaryTarget(
-            name: "CliftyCore",
-            path: "CliftyCore.xcframework"
-        )
-    ]
-)
-
-let CliftyNFTPickerSDK = Package(
-    name: "Clifty NFT Picker SDK",
-    platforms: [
-        .iOS(.v11)
-    ],
-    products: [
+            targets: ["CliftyCore"]),
         .library(
             name: "CliftyNFTPicker",
             targets: ["CliftyNFTPicker"])
     ],
     targets: [
+        .binaryTarget(
+            name: "CliftyCore",
+            path: "CliftyCore.xcframework"
+        ),
         .binaryTarget(
             name: "CliftyNFTPicker",
             path: "CliftyNFTPicker.xcframework"

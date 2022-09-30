@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00016A8828C3B7110071191A /* CliftyNFTPicker.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */; };
-		00016A8928C3B7110071191A /* CliftyNFTPicker.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00016A8C28C3B81D0071191A /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00016A8B28C3B81D0071191A /* PickerViewController.swift */; };
 		00016A8F28C3B92C0071191A /* WalletConnectSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 00016A8E28C3B92C0071191A /* WalletConnectSwift */; };
 		00016A9128C3B9540071191A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00016A9028C3B9540071191A /* ImageLoader.swift */; };
-		005F2F1C28175D61001C099D /* CliftyCore in Frameworks */ = {isa = PBXBuildFile; productRef = 005F2F1B28175D61001C099D /* CliftyCore */; };
+		00BB740728E748D7006794B8 /* CliftyNFTPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 00BB740628E748D7006794B8 /* CliftyNFTPicker */; };
 		00CF667027F9F8B00076D907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF666F27F9F8B00076D907 /* AppDelegate.swift */; };
 		00CF667227F9F8B00076D907 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF667127F9F8B00076D907 /* SceneDelegate.swift */; };
 		00CF667727F9F8B00076D907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF667527F9F8B00076D907 /* Main.storyboard */; };
@@ -28,7 +26,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00016A8928C3B7110071191A /* CliftyNFTPicker.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CliftyNFTPicker.xcframework; path = ../CliftyNFTPicker.xcframework; sourceTree = "<group>"; };
 		00016A8B28C3B81D0071191A /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		00016A9028C3B9540071191A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		00CF666C27F9F8B00076D907 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,9 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BB740728E748D7006794B8 /* CliftyNFTPicker in Frameworks */,
 				00016A8F28C3B92C0071191A /* WalletConnectSwift in Frameworks */,
-				005F2F1C28175D61001C099D /* CliftyCore in Frameworks */,
-				00016A8828C3B7110071191A /* CliftyNFTPicker.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +94,6 @@
 		00CF668427F9FBB40076D907 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00016A8728C3B7110071191A /* CliftyNFTPicker.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,8 +116,8 @@
 			);
 			name = Sample;
 			packageProductDependencies = (
-				005F2F1B28175D61001C099D /* CliftyCore */,
 				00016A8E28C3B92C0071191A /* WalletConnectSwift */,
+				00BB740628E748D7006794B8 /* CliftyNFTPicker */,
 			);
 			productName = Sample;
 			productReference = 00CF666C27F9F8B00076D907 /* Sample.app */;
@@ -154,8 +148,8 @@
 			);
 			mainGroup = 00CF666327F9F8B00076D907;
 			packageReferences = (
-				005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */,
 				00016A8D28C3B92C0071191A /* XCRemoteSwiftPackageReference "WalletConnectSwift" */,
+				00BB740528E748D7006794B8 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 			);
 			productRefGroup = 00CF666D27F9F8B00076D907 /* Products */;
 			projectDirPath = "";
@@ -428,12 +422,12 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+		00BB740528E748D7006794B8 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/clifty-io/ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -444,10 +438,10 @@
 			package = 00016A8D28C3B92C0071191A /* XCRemoteSwiftPackageReference "WalletConnectSwift" */;
 			productName = WalletConnectSwift;
 		};
-		005F2F1B28175D61001C099D /* CliftyCore */ = {
+		00BB740628E748D7006794B8 /* CliftyNFTPicker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 005F2F1A28175D61001C099D /* XCRemoteSwiftPackageReference "ios-sdk" */;
-			productName = CliftyCore;
+			package = 00BB740528E748D7006794B8 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = CliftyNFTPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

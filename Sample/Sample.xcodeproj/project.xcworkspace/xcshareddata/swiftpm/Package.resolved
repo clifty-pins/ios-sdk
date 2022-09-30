@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/clifty-io/ios-sdk",
       "state" : {
-        "revision" : "249976bdb12f93f6f9de40855767b34f173a5f66",
-        "version" : "0.2.0"
+        "branch" : "main",
+        "revision" : "d9ebbd50805c63302bfc4e65e16e9a09c3a9ca9a"
       }
     },
     {
